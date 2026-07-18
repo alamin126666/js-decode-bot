@@ -29,6 +29,14 @@ async function buildAll() {
     // - use path traversal to read files (e.g. @google-cloud/secret-manager loads sibling .proto files)
     external: [
       "*.node",
+      // Deobfuscation libs — complex ESM internals, safer as externals
+      "webcrack",
+      "@babel/parser",
+      "@babel/traverse",
+      "@babel/generator",
+      "@babel/types",
+      "@babel/helper-*",
+      "@babel/core",
       "sharp",
       "better-sqlite3",
       "sqlite3",
