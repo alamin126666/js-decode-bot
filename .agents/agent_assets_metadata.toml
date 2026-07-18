@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "DJUmhL44baXcdXhypYMrI"
+uri = "file://attached_assets/script_decoded.js"
+type = "unspecified"
+title = "Decoded JavaScript"
