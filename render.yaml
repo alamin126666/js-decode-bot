@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: js-decoder-bot
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: "npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/api-server run build"
+    startCommand: "pnpm --filter @workspace/api-server run start"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false        # আপনি Render dashboard-এ manually দেবেন
+      - key: SESSION_SECRET
+        sync: false        # আপনি Render dashboard-এ manually দেবেন
+      - key: NODE_ENV
+        value: production
