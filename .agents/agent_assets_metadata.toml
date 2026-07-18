@@ -6,3 +6,9 @@ id = "DJUmhL44baXcdXhypYMrI"
 uri = "file://attached_assets/script_decoded.js"
 type = "unspecified"
 title = "Decoded JavaScript"
+
+[[outputs]]
+id = "TSGlzxQPTZsM2VVEGoEYl"
+uri = "file://attached_assets/script_fully_decoded.js"
+type = "unspecified"
+title = "Fully Decoded JavaScript"
